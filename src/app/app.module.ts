@@ -12,6 +12,13 @@ import { PeliculaAltaComponent } from './component/peliculas/pelicula-alta/pelic
 import { ActorAltaComponent } from './component/actor/actor-alta/actor-alta.component';
 import { ActorListadoComponent } from './component/actor/actor-listado/actor-listado.component';
 import { PeliculaListadoComponent } from './component/peliculas/pelicula-listado/pelicula-listado.component';
+import { TablaPaisesComponent } from './component/tabla-paises/tabla-paises.component';
+import { ActorAltaFormularioComponent } from './component/actor/actor-alta-formulario/actor-alta-formulario.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { FormControl } from '@angular/forms';
+import { PaisesService } from './service/paises.service';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -24,13 +31,18 @@ import { PeliculaListadoComponent } from './component/peliculas/pelicula-listado
     PeliculaAltaComponent,
     ActorAltaComponent,
     ActorListadoComponent,
-    PeliculaListadoComponent
+    PeliculaListadoComponent,
+    TablaPaisesComponent,
+    ActorAltaFormularioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PaisesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

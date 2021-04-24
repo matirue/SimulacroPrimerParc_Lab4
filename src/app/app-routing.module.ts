@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BienvenidoComponent } from './pages/bienvenido/bienvenido.component';
 import { BusquedaComponent } from './component/busqueda/busqueda.component';
+import { ActorAltaComponent } from './component/actor/actor-alta/actor-alta.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'busquedaPelicula', 
     component: BusquedaComponent
+  },
+  {
+    path: 'altaActores', 
+    component: ActorAltaComponent
   }
 ];
 

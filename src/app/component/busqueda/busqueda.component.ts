@@ -66,4 +66,8 @@ export class BusquedaComponent implements OnInit {
   }
   /***************/
 
+  AlertBoton(){
+    alert("NO tiene funcionalidad todavia");
+  }
+
 }

@@ -1,11 +1,9 @@
-body{
-    background-color: rgb(202, 202, 202); 
-}
+
 
 .jumbotron{
-    background-color: rgba(221, 112, 34, 0.371);
+    background-color: rgba(163, 163, 163, 0.371);
 }
 
 .col_medio{
-    background-color: rgba(191, 97, 30, 0.371);
+    background-color: rgba(135, 135, 135, 0.371);
 }
