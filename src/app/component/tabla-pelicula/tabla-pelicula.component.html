@@ -1,18 +1,10 @@
-<div class="jumbotron">
-    <div class="container">
-        <!--ul>
-        <li *ngFor="let pelicula of listaDePeliculas">
+<h1>Peliculas</h1> 
 
-          <button class="btn btn-outline-primary" (click)="SeleccionarUnaPelicula(pelicula)">{{pelicula.nombre}}</button>
-        
-        </li>
+<div class="col borde">
+  <div *ngFor="let pelicula of listaDePeliculas">
+    <button class="btn btn-outline-primary" (click)="SeleccionarUnaPelicula(pelicula)">
 
-      </ul-->
-        <h1>Peliculas</h1>
-        <div class="col-md-4" *ngFor="let pelicula of listaDePeliculas">
-
-            <button class="btn btn-outline-primary" (click)="SeleccionarUnaPelicula(pelicula)">{{pelicula.nombre}}</button>
-
-        </div>
-    </div>
+      <img src={{pelicula.fotoDePelicula}}>
+    </button>
+  </div>
 </div>

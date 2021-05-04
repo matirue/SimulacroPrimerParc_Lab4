@@ -2,3 +2,12 @@ h1{
     color: red;
     font-family: fantasy;
 }
+div img{
+    width: 150px;
+    height: 200px;
+}
+ 
+div button{
+    width: 200px;
+    border-color: brown;
+}

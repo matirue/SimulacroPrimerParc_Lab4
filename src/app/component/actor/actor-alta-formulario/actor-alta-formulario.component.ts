@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Actor } from 'src/app/class/actor';
 import { Pais } from 'src/app/class/pais';
-import { PaisesService } from 'src/app/service/paises.service';
+import { AltaService } from 'src/app/service/alta.service';
 
 @Component({
   selector: 'app-actor-alta-formulario',
@@ -23,7 +24,7 @@ export class ActorAltaFormularioComponent implements OnInit {
   public forma!: FormGroup;
 
   constructor(
-    private pasies_service: PaisesService,
+    private auth: AltaService,
     private router: Router,
     private fb: FormBuilder,
   ) { }
@@ -46,8 +47,28 @@ export class ActorAltaFormularioComponent implements OnInit {
 
   AltaDelActor(){
     //alert(this.forma?.getRawValue());
-    console.log(this.forma.getRawValue());
-    alert('mira la consola, no se donde hay q guardarlo');
+    //console.log(this.forma.getRawValue());
+    //alert('mira la consola, no se donde hay q guardarlo');
+    this.forma.controls.nacionalidad.setValue(this.paisElegido.name);
+
+    let unActor: Actor = {
+      id: Math.floor(Math.random()*(999-0))+1,
+      nombre: this.forma.value.nombre,
+      apellido: this.forma.value.apellido,
+      email: this.forma.value.email,
+      pais: this.paisElegido,
+    }
+
+    //const ret = this.auth.ActorAlta_service(unActor);
+    this.auth.ActorAlta_service(unActor).then( ret => {
+      if(ret.path){
+        this.router.navigateByUrl("/bienvenidos");
+      }
+      else{
+        alert("ERROR en el alta!!!");
+      }
+    })
+    
   }
 
   private validadorEspacio(control:AbstractControl): null | object{

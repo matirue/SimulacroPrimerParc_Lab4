@@ -13,3 +13,13 @@ nav{
 .navbar {
     position: sticky;
 }
+
+nav .dropdown-toggle{
+    color: white;
+}
+
+nav .dropdown-menu{
+    background-color: darkgray;
+    
+
+}

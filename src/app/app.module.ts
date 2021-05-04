@@ -19,6 +19,11 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { PaisesService } from './service/paises.service';
 import { from } from 'rxjs';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { TablaActorComponent } from './component/tabla-actor/tabla-actor.component';
+import { AltaPeliculaFormularioComponent } from './component/peliculas/alta-pelicula-formulario/alta-pelicula-formulario.component';
+import { DetallePliActoresComponent } from './component/detalle-pli-actores/detalle-pli-actores.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +38,18 @@ import { from } from 'rxjs';
     ActorListadoComponent,
     PeliculaListadoComponent,
     TablaPaisesComponent,
-    ActorAltaFormularioComponent
+    ActorAltaFormularioComponent,
+    TablaActorComponent,
+    AltaPeliculaFormularioComponent,
+    DetallePliActoresComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [PaisesService],
   bootstrap: [AppComponent]
