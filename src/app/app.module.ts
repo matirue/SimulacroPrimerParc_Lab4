@@ -24,6 +24,10 @@ import { environment } from 'src/environments/environment';
 import { TablaActorComponent } from './component/tabla-actor/tabla-actor.component';
 import { AltaPeliculaFormularioComponent } from './component/peliculas/alta-pelicula-formulario/alta-pelicula-formulario.component';
 import { DetallePliActoresComponent } from './component/detalle-pli-actores/detalle-pli-actores.component';
+import { ActorPeliculaComponent } from './component/actor/actor-pelicula/actor-pelicula.component';
+import { InfoPaisComponent } from './component/actor/info-pais/info-pais.component';
+import { InfoActorComponent } from './component/actor/info-actor/info-actor.component';
+import { PeliculaActorComponent } from './component/actor/pelicula-actor/pelicula-actor.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { DetallePliActoresComponent } from './component/detalle-pli-actores/deta
     ActorAltaFormularioComponent,
     TablaActorComponent,
     AltaPeliculaFormularioComponent,
-    DetallePliActoresComponent
+    DetallePliActoresComponent,
+    ActorPeliculaComponent,
+    InfoPaisComponent,
+    InfoActorComponent,
+    PeliculaActorComponent
   ],
   imports: [
     BrowserModule,

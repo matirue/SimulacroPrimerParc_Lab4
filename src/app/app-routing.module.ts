@@ -5,6 +5,7 @@ import { BienvenidoComponent } from './pages/bienvenido/bienvenido.component';
 import { BusquedaComponent } from './component/busqueda/busqueda.component';
 import { ActorAltaComponent } from './component/actor/actor-alta/actor-alta.component';
 import { PeliculaAltaComponent } from './component/peliculas/pelicula-alta/pelicula-alta.component';
+import { ActorPeliculaComponent } from './component/actor/actor-pelicula/actor-pelicula.component';
 
 const routes: Routes = [
   {
@@ -24,8 +25,12 @@ const routes: Routes = [
     
   },
   {
-    path: 'altaActores', 
-    component: ActorAltaComponent
+    path: 'actor', 
+    children: [
+      {path: 'altaActores', component: ActorAltaComponent},
+      {path: 'actorPelicula',  component: ActorPeliculaComponent}
+    ]
+    
   }
 ];
 

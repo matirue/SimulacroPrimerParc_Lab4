@@ -102,7 +102,8 @@ export class AltaPeliculaFormularioComponent implements OnInit {
         apellido: this.actorSeleccionado.apellido,
         email: this.actorSeleccionado.email,
         id: this.actorSeleccionado.id,
-        pais: this.actorSeleccionado.pais
+        pais: this.actorSeleccionado.pais,
+        foto: this.fotoPelicula_peli,
       },
     };
 

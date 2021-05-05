@@ -5,4 +5,5 @@ export class Actor {
     email!:string;
     pais!:any;
     nombrePais?:string;
+    foto!:string;
 }

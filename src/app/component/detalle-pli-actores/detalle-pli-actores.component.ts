@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Actor } from 'src/app/class/actor';
 import { Pelicula } from 'src/app/class/pelicula';
 
 @Component({
@@ -9,6 +10,8 @@ import { Pelicula } from 'src/app/class/pelicula';
 export class DetallePliActoresComponent implements OnInit {
 
   @Input()MostrarPelicula: Pelicula;
+
+  
 
   constructor() { 
     this.MostrarPelicula = new Pelicula();

@@ -57,6 +57,7 @@ export class ActorAltaFormularioComponent implements OnInit {
       apellido: this.forma.value.apellido,
       email: this.forma.value.email,
       pais: this.paisElegido,
+      foto: ''
     }
 
     //const ret = this.auth.ActorAlta_service(unActor);

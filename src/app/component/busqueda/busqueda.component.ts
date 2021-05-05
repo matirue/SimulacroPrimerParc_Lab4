@@ -18,7 +18,7 @@ export class BusquedaComponent implements OnInit {
     private auth: AltaService
   ) { //meter peliculas para mostrar
 
-    this.listaDePeliculas = [
+    /*this.listaDePeliculas = [
       {
         id: 1,
         nombre: "Harry Potter y el Caliz de Fuego",
@@ -83,7 +83,7 @@ export class BusquedaComponent implements OnInit {
           pais: "Canada"
         }
       }
-    ];
+    ];*/
   }
 
   ngOnInit(): void {
