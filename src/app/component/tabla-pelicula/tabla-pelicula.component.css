@@ -10,4 +10,21 @@ div img{
 div button{
     width: 200px;
     border-color: brown;
+    background-color:  brown;
 }
+
+.grid {
+    background-color:  rgba(163, 163, 163, 0.371);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: auto;
+    overflow-y: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+  }
