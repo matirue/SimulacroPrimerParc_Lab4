@@ -3,7 +3,7 @@
   </h4>
   <ul class="list-group mb-3">
     <li class="list-group-item d-flex justify-content-between lh-condensed"
-    *ngFor="let paises of listaDePaises | slice:0:6; let i=index">
+    *ngFor="let paises of listaDePaises | slice:0:10; let i=index"> <!-- |slice:0:6;-->
         <button class="btn btn-light" (click)="click_PaisElegido(paises)">
             <!--p>{{paises.nombre}}</p>            
             <img src={{paises.ruta}} -->

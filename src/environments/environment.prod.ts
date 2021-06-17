@@ -1,11 +1,12 @@
 export const environment = {
   production: true,
   firebaseConfig: {
-    apiKey: "AIzaSyAas7EUVtUpjsA3YGyj2rju0oHzHqsTpfo",
-    authDomain: "simpppeliculas.firebaseapp.com",
-    projectId: "simpppeliculas",
-    storageBucket: "simpppeliculas.appspot.com",
-    messagingSenderId: "860038034739",
-    appId: "1:860038034739:web:006949718d261959fb7a46"
+    apiKey: "AIzaSyCzB-sC-DkalPGTmnjVj5d1zwMwjnjVO3g",
+    authDomain: "simpeliculas-917cb.firebaseapp.com",
+    projectId: "simpeliculas-917cb",
+    storageBucket: "simpeliculas-917cb.appspot.com",
+    messagingSenderId: "298042427256",
+    appId: "1:298042427256:web:ea9df36ee3338f29e2ea8d",
+    measurementId: "G-VEKCWT56EG"
   }
 };
